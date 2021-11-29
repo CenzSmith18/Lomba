@@ -71,6 +71,7 @@ li {
     outline: none;
     transition: .3s;
 }
+
  
 .container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
     border-color: #a29bfe;

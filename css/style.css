@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
 body {
     background-image: url("https://media.discordapp.net/attachments/912277411045982243/912314939610386432/pexels-katerina-holmes-5905507.jpg");
     
@@ -23,7 +30,7 @@ header ul {
 li {
     list-style: none;
     margin: 5px 10px;
-    font-size: 16pt;
+    font-size: 16px;
     color: white;
 }
 
