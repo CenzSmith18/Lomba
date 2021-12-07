@@ -51,47 +51,34 @@ if (isset($_POST['submit'])) {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/shit.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-aweasome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Login</title>
+        <!--responsif-->
+	    <link rel="stylesheet" href="css/responsif.css">
+        <title>Daftar</title>
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img src="asset/logo.png" alt="" style="  width: 80px;">
-                <div class="nama-logo">
-                </div> 
-            </div>
-        </header>
+
         <div class="container">
-            <form action="" method="POST" class="login-email">
-                <p class="login-text" style="font-size: 2rem; font-weight: 800;">Daftar</p>
-                <div class="input-group">
-                    <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
+            <form action="" method="POST" class="form-test">
+                <p class="daftar-text">Daftar</p>
+                <div class="input">
+                    <input class="input-daftar" type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
                 </div>
-                <div class="input-group">
-                    <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                <div class="input">
+                    <input class="input-daftar" type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
                 </div>
-                <div class="input-group">
-                    <select type="select" id="kelas" name="kelas" style="width:100%">
-                        <option>Kelas</option>
-                        <option>10-TKI</option>
-                        <option>11-RPL</option>
-                        <option>12-RPL</option>
-                    </select>
+                <div class="input">
+                    <input class="input-daftar" type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
                 </div>
-                <div class="input-group">
-                    <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                <div class="input">
+                    <input class="input-daftar" type="password" placeholder="Konfirmasi Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
                 </div>
-                <div class="input-group">
-                    <input type="password" placeholder="Konfirmasi Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
-                </div>
-                <div class="input-group">
+                <div class="input">
                     <button name="submit" class="btn">Register</button>
                 </div>
-                <p class="login-daftar-teks">Anda Sudah Punya Akun? <a href="login.php">Login </a></p>
+                <p class="info-teks">Anda Sudah Punya Akun? <a href="login.php">Login </a></p>
             </form>
     </body>
 </html>

@@ -5,15 +5,23 @@
     if (!isset($_SESSION['username'])) {
         header("Location: login.php");
     }
+	$akses = $_SESSION['akses'];
 
     ?>
     
  
- <html>
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- bootstrap css -->
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/Berandastyle.css">
+	<!--responsif-->
+	<link rel="stylesheet" href="css/responsif.css">
 </head>
 <body>
 	<header>
@@ -41,7 +49,10 @@
     	</nav>
 	    <div class="sidebar">
 	    	<img src="asset/Profile.png">
-			<?php echo "<p>" . $_SESSION['username'] . "</p>"; ?>
+			<?php
+			echo "<p>". $_SESSION['username'] . "</p>";
+			echo strtoupper("<p>" . $akses . "</p>");
+			?>
 	        <ul>
 	          	<li class="active"><a href="#">Jadwal Pelajaran</a></li>
 	            <li class="active"><a href="#">Room Virtual Class</a></li>
@@ -53,69 +64,38 @@
 	    </div>
 	    <script src="js/sidebar.js"></script>
 	</header>
+<div class="container">
 	<div class="main-class">
     	<p>PERTEMUAN KELAS</p>
-		<?php 
-						$username = $_SESSION['username'];
-						$sql = "SELECT * FROM users WHERE username='$username'";
-						$result = mysqli_query($conn, $sql);
-						if ($result->num_rows > 0) {
-							$row = mysqli_fetch_assoc($result);
-								if ($row['akses']=="guru"){
-									$_SESSION['username'] = $row['username'];
-									$_SESSION['akses'] = "guru";
-									echo "<a href='edit.php'><button class='btn-1'>Edit</button></a>";
-									echo "<a href='add.php'><button class='btn-1'>Tambah</button></a><br><br>";
-								}
-						}
-					?>
-    	<table border='1'>
+    	<table class="table table-borderless">
     		<tr>
-			<?php 
-			echo "
-
-			<th>Id</th>
-			
-			<th>Pelajaran</th>
-			
-			<th>Tanggal</th>
-			
-			<th>Jam</th>
-			
-			<th>Link</th>
-			
-			";
-						$sql = "SELECT * FROM kelas_live";
-						$result = mysqli_query($conn, $sql);
-						if ($result->num_rows > 0) {
-							while($row = mysqli_fetch_assoc($result)) {
-								echo "<tr></tr>";
-							echo "<td>".$row['id']."</td>";
-							echo "<td>".$row['pelajaran']."</td>";
-							echo "<td>".$row['tanggal']."</td>";
-							echo "<td>".$row['jam']."</td>";
-							echo "<td><a href=".$row['link'].">Join</a></td>";
-							
-							}
-						}
-					?>
-    			
+    			<td>Fungsi Kuadrat</td>
+    			<td>Hari ini </td>
+    			<td><li>Live Sekarang</li></td>
+    			<td>
+    				<button class="btn-1">Gabung</button>
+    			</td>
     		</tr>
-    	
+
     		<tr>
-				
-    			
-    		
+    			<td>Persiapan PAS</td>
+    			<td>01 Des 2021</td>
+    			<td>10 AM - 12 PM</td>
+    			<td>
+    				<button class="btn-2">Waiting</button>
+    			</td>
+    		</tr>
+    		<tr><td></td><td></td><td></td><td></td></tr>
     	</table>
     	<nav>
     		<p>DAFTAR TUGAS
     			<button class="btn-3">
-    				<a href="#"><img src="asset/icon.png">Lihat lainnya</a>
+    				<a href="tugas.php"><img src="asset/icon.png">Lihat lainnya</a>
     			</button>
     		</p>
     	</nav>
         <div class="asg-1">
-    	<img src="asset/grafik.jpg" alt="Fungsi kuadrat">
+    		<img src="asset/grafik.jpg" alt="Fungsi kuadrat">
     		<p>Fungsi Kuadrat</p>
     		<p style="color: #33cc33; margin-bottom: 40px; margin-top: 0px;">Tenggat: Rabu, 02 Nov</p>
     		<p>Rumus ABC dan Melengkapkan Bentuk Kuadrat Sempurna</p>
@@ -133,7 +113,7 @@
     		<img src="asset/juara.jpg" style="height: 290px;">
     		<img src="asset/soal.jpg" style="height: 290px;">
     	</div>
-    </div>   	
+    </div>
+</div>	
     <footer></footer>
 </body>
-</html>

@@ -27,9 +27,9 @@
             </div>
         </header>
         <div class="container-logout">
-            <form action="" method="POST" class="login-email">
+            <form action="" method="POST" class="form-test">
                 <?php echo "<h1>Selamat Datang," . $_SESSION['username'] ."!". "</h1>"; ?>
-                <div class="input-group">
+                <div class="input">
                     <a href="logout.php" class="btn">Logout</a>
                 </div>
             </form>

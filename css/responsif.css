@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+@media screen and (min-width: 400px) and (max-width: 600px) {
+	.coment {
+		width: 100%;
+
+	}
+	.asgn {
+		width: 58%;
+	}
+	.upld {
+		border-radius: 10px;
+		margin: 15px;
+	}
+	
+	.upld img {
+		width: 40px;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+	
+	.upld p {
+		margin-top: 0px;
+		font-size: small;
+	}
+	.asgn .sub-1 {
+		padding: 10px 10px 10px 10px;
+	}
+    select {
+        margin-left: 25px;
+        margin-top: 5px;
+        padding: 2px 5px 2px 5px;
+        font-size: 10px;
+        height: 30px;
+        width: 115px;
+    }
+    td {
+        font-size: small;
+    }
+    .btn-1 {
+        font-size: 10px;
+    }
+    
+    .btn-2 {
+        font-size: 10px;
+    }
+    .btn-3 {
+        float: left;
+        border-radius: 15px;
+        padding: 5px 10px 5px 30px;
+    }
+    .asg-1 {
+        border: none;
+        border-radius: 20px;
+        width: 55%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .asg-1 img {
+        width: 160px;
+        height: 150px;
+        float: right;
+        margin: 5px 8px 0px 50px;
+        border-radius: 15px;
+        border: none;
+    }
+    .asg-2 {
+        border: none;
+        border-radius: 20px;
+        width: 55%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .asg-2 img {
+        width: 160px;
+        height: 150px;
+        float: right;
+        margin: 5px 8px 0px 50px;
+        border-radius: 15px;
+        border: none;
+    }
+
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.asgn {
+		width: 38%;
+	}
+	.upld {
+		border-radius: 10px;
+		margin: 15px;
+	}
+	
+	.upld img {
+		width: 40px;
+		margin-top: 15px;
+		margin-bottom: 0px;
+	}
+	
+	.upld p {
+		margin-top: 0px;
+		font-size: small;
+	}
+	.asgn .sub-1 {
+		padding: 10px 30px 10px 30px;
+	}
+    select {
+        margin-left: 100px;
+        padding: 2px 30px 2px 30px;
+        font-size: 15px;
+    }
+    .btn-3 {
+        float: left;
+        border-radius: 15px;
+        padding: 5px 10px 5px 30px;
+    }
+    .asg-1 {
+        border: none;
+        border-radius: 20px;
+        width: 35%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .asg-1 img {
+        width: 180px;
+        height: 150px;
+        float: right;
+        margin: 5px 5px 0px 50px;
+    }
+    .asg-2 {
+        border: none;
+        border-radius: 20px;
+        width: 35%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .asg-2 img {
+        width: 180px;
+        height: 150px;
+        float: right;
+        margin: 5px 5px 0px 50px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+	.asgn {
+		width: 28%;
+	}
+	.asgn .sub-1 {
+		padding: 10px 60px 10px 60px;
+	}
+    select {
+        margin-left: 400px;
+        padding: 2px 30px 2px 30px;
+        font-size: 15px;
+    }
+    .btn-3 {
+        float: right;
+        border-radius: 15px;
+        padding: 5px 10px 5px 30px;
+    }
+    .asg-1 {
+        border: none;
+        border-radius: 20px;
+        width: 35%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .asg-1 img {
+        width: 200px;
+        height: 150px;
+        float: right;
+        margin: 5px 5px 0px 50px;
+    }
+    .asg-2 {
+        border: none;
+        border-radius: 20px;
+        width: 35%;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    
+    .asg-2 img {
+        width: 200px;
+        height: 150px;
+        float: right;
+        margin: 5px 5px 0px 50px;
+    }
+
+}
