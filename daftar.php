@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.css">
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/shit.css">
+        <link rel="stylesheet" href="css/login.css">
         <!--responsif-->
 	    <link rel="stylesheet" href="css/responsif.css">
         <title>Daftar</title>
